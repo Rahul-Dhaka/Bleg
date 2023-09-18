@@ -112,7 +112,7 @@ background: linear-gradient(135deg, rgba(234, 14, 105, 1.0), rgba(152, 60, 224, 
 
 nav .links ul li a:hover{
   transition: .3s ease;
-  color: rgba(234, 14, 105, 1.0);
+  color: hsl(198deg 100% 46%);;
   transform: scale(1.2);
   }
  li:hover #sub_nav {
@@ -121,112 +121,75 @@ nav .links ul li a:hover{
    }
    #sub_nav li a:hover{
     background-color: rgba(255, 255,255,.2);
-    color:rgba(234, 14, 105, 1.0); ;
+    color:hsl(198deg 100% 46%); 
    }
 .site-container {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   width: 100%;
   height: 100vh;
   background-image: url(https://wallpapercave.com/wp/wp9983504.jpg);
   background-size: cover;
 }
-
-.blog-post{
-  width: 85%;
-  /* max-width: 98rem; */
-  margin-left: 10px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 1rem 1rem 5rem rgba(0,0,0,.3);
-  display: flex;
-  align-items: center;
-  border-radius: 15px;
-}
-
-.blog-post_img{
-  min-width: 250px;
-  max-width: 250px;
-  height: 250px;
-  transform: translateX(-70px);
+.site-container .content{
+  border:5px solid rgba(234, 14, 105, 1.0);
+  width: 90%;
+  height: 500px;
+  margin: auto;
   position: relative;
+  top: 80px;
+  border-radius: 50px;
 }
-
-.blog-post_img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 15px;
+  .content .blog-post img{
+  border-radius: 80%;
+ float: right;
+ margin-top: 30px;
+ margin-right: 20px;
+ border: 5px solid rgba(234, 14, 105, .8) ;
+ box-shadow: 0 0 10px rgba(234, 14, 105, 1.0) ;
+ 
 }
-
-.blog-post_img::before{
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(to right, rgba(79,172,254,.8),rgba(0,242,254,.8));
-  box-shadow: .5rem .5rem 1.4rem 1px rgba(0,0,0,.5);
-  border-radius: 15px;
+.content .blog-post{
+  color: white;
+  font-size: 50px;
+  margin: 10PX 80px;
+  line-height: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
-
-.blog-post_date span{
-  display: block;
-  color: rgba(0,0,0,.5);
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin: 2px 0;
-}
-
-.blog-post_title{
-  font-size: 2.5rem;
-  margin: 10px 0 4px;
-  text-transform: uppercase;
-  color: #4facfe;
-}
-
-.blog-post_text{
-  margin-bottom: 1rem;
-  font-size: 20px;
-  color: rgba(0,0,0,.7);
-}
-
-.blog-post_cta{
-  display: inline-block;
-  padding: .5rem 1rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 1.2rem;
+.blog-post p{
   color: #fff;
-  border-radius: .2rem;
-  background-image: linear-gradient(to right, #4facfe, #00f2fe 100%);
+  font-size: 35px;
+  font-weight: 800;
+  margin-top: 75px;
 }
-
-footer {
-  display: flex;
-  width: 100%;
-  height: 30px;
-  background-color: palegreen;
-  justify-content: space-around;
-  align-items: center;
+.blog-post span{
+  font-family: cursive;
+ font-size: 30px;
+ color: pink;
+ font-weight: 700;
+ 
 }
-
-
-@media screen and (max-width: 1000px){
-  .blog-post{
-    max-width: 85%;
-    flex-direction: column;
-    margin-left: 0;
+.blog-post button{
+  border-radius: 20px;
+  position: relative;
+  margin: 25px 500px;
+  
+  
+  
+}
+.blog-post button a   {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  padding: 0 10px;
+  border: 1px solid white;
+  border-radius: 30px;
+  
+  
   }
-
-  .blog-post_img{
-    min-width: none;
-    width: 85%;
-    max-width: none;
-    transform: translate(0,-30%);
+  .blog-post button:hover{
+    
+    background: linear-gradient(135deg, rgba(234, 14, 105, 1.0), rgba(152, 60, 224, 1.0));
   }
-
-}
