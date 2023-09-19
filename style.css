@@ -59,6 +59,7 @@ nav h1{
   display: none;
   position: absolute;
    background-color: rgba(0, 0, 0, .5);
+   
 }
 
 #sub_nav li a  {
@@ -110,14 +111,9 @@ background: linear-gradient(135deg, rgba(234, 14, 105, 1.0), rgba(152, 60, 224, 
 }
 
 nav .links ul li a:hover{
-<<<<<<< HEAD
-  transition: .3s ease;
+ 
   color: hsl(198deg 100% 46%);;
-  transform: scale(1.2);
-=======
-  /* transition: .3s ease; */
-  color: crimson;
->>>>>>> fbedc1217d889797552cea776b9f193635c94158
+  
   }
 
  li:hover #sub_nav {
@@ -127,6 +123,7 @@ nav .links ul li a:hover{
    #sub_nav li a:hover{
     background-color: rgba(255, 255,255,.2);
     color:hsl(198deg 100% 46%); 
+   
    }
 .site-container {
   /* display: flex;
